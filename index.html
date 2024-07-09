@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGIS Secrets App</title>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.29/"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="Logo.jpg" alt="Logo of our WebGIS">
+    <h1>WebGIS Application</h1>
+  </header>
+  <main>
+    <div id="sidebar" >
+      Tools and Options
+      <hr>
+      <div id="myLegend">
+      </div>
+      <hr>
+      <div style="width:100%; background-color: white;" id="myQuery">
+        Your Where Statement:<br>
+        <input id="thatQuery" type="text" value="ELEV_FT > 50"><br>
+        <button id="myQueryButton">Do Query...</button>
+      </div>
+    </div>
+    <div id="map" ></div>
+  </main>
+
+  <script src="arcgis7PopupJavaScript.js"></script>
+</body>
+</html>
+
